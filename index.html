@@ -1,259 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Shai Delos Santos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shai Delos Santos | Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<canvas id="net" aria-hidden="true"></canvas>
 
 <header>
-  <div class="wrap bar">
-    <a class="logo" href="#home">shai<span>.</span>delos santos</a>
-    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav">☰</button>
-    <nav id="nav" aria-label="Main">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
+  <a href="#top" class="logo">SDS<span>_</span></a>
+  <button class="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+  <nav id="menu">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-<main>
-  <section class="hero" id="home">
-    <div class="wrap">
+<main id="top">
+  <section class="hero" aria-label="Introduction">
+    <div class="grid"></div>
+    <div class="role"><span id="typed"></span><i></i></div>
+    <h1 class="bigname" id="name" aria-label="Shai Delos Santos">
+      <span data-t="SHAI">SHAI</span>
+      <span data-t="DELOS SANTOS">DELOS SANTOS</span>
+    </h1>
+    <img class="photo" id="photo" src="hero-removebg-preview.png" alt="Portrait of Shai Delos Santos">
+    <div class="scan"></div>
+    <div class="hud l"><b>&gt; status</b><br>online<br><b>&gt; mode</b><br>building</div>
+    <div class="hud r"><b>&gt; location</b><br>Philippines<br><b>&gt; open_to</b><br>Remote (WFH) / On_site</div>
+  </section>
+
+  <section class="s" id="about">
+    <h2 class="rv">About</h2><span class="tag rv">// who I am</span>
+    <div class="about rv">
       <div>
-       <h1>Learning, growing, and pursuing my <em>future in technology.</em></h1>
-        
-<p class="lead">Hi, I'm Shai, a BSIT graduate majoring in Web Systems Technology. I'm eager to start my career in IT, apply my knowledge of web development and design, and continue learning and growing as a future IT professional.</p>
-        <div class="btns">
-          <a class="btn primary" href="#projects">View my projects</a>
-          <a class="btn ghost" href="#contact">Contact me</a>
-        </div>
+        <p>I'm Shai Delos Santos, a developer focused on building clean, fast, and dependable web applications. I leverage AI-assisted development tools to streamline workflows, improve problem-solving, and build efficient solutions while maintaining a strong focus on code quality.</p>
+        <p>I'm always eager to explore emerging technologies, expand my technical skill set, and turn ideas into practical, well-crafted products.</p>
       </div>
-      <div class="photo">
-        <img src="images/hero.jpg" width="440" height="527" alt="Portrait of Alex Rivera" onerror="this.style.display='none'">
+      <div class="term">
+        <div class="bar"><i></i><i></i><i></i></div>
+        <div class="b"><em>name</em> <span>=</span> "Shai Delos Santos"<br><em>role</em> <span>=</span> "Web Developer"<br><em>focus</em> <span>=</span> ["Frontend", "Backend", "Databases"]<br></div>
       </div>
     </div>
   </section>
 
-  <section id="about">
-    <div class="wrap">
-      <h2>About me</h2>
-      <div class="about">
-        <div class="portrait">
-          <img src="images/aboutme.png" width="640" height="800" alt="Alex Rivera at work" loading="lazy" onerror="this.style.display='none'">
-        </div>
-        <div>
-          
-<p>I'm a BSIT graduate majoring in Web Systems Technology. I have knowledge of web development, website design, and basic IT tasks, with a focus on creating functional and user-friendly websites.</p>
-<p>I also have experience with office tasks, document organization, and administrative support. I'm detail-oriented, adaptable, and eager to keep improving my technical and organizational skills.</p>
-        </div>
-      </div>
+  <section class="s" id="skills">
+    <h2 class="rv">Skills</h2><span class="tag rv">// languages &amp; technologies</span>
+    <div class="skills">
+      <div class="tile rv"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/html5/html5-original.svg" alt="" loading="lazy" onerror="this.style.display='none'"><span>HTML</span></div>
+      <div class="tile rv"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/css3/css3-original.svg" alt="" loading="lazy" onerror="this.style.display='none'"><span>CSS</span></div>
+      <div class="tile rv"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/javascript/javascript-original.svg" alt="" loading="lazy" onerror="this.style.display='none'"><span>JavaScript</span></div>
+      <div class="tile rv"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/php/php-original.svg" alt="" loading="lazy" onerror="this.style.display='none'"><span>PHP</span></div>
+      <div class="tile rv"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mysql/mysql-original.svg" alt="" loading="lazy" onerror="this.style.display='none'"><span>MySQL</span></div>
+      <div class="tile rv"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="" loading="lazy" onerror="this.style.display='none'"><span>SQL Server</span></div>
+      <div class="tile rv"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/postgresql/postgresql-original.svg" alt="" loading="lazy" onerror="this.style.display='none'"><span>PostgreSQL</span></div>
+      <div class="tile rv"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/python/python-original.svg" alt="" loading="lazy" onerror="this.style.display='none'"><span>Python</span></div>
+      <div class="tile rv"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/java/java-original.svg" alt="" loading="lazy" onerror="this.style.display='none'"><span>Java</span></div>
+      <div class="tile rv"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/laravel/laravel-original.svg" alt="" loading="lazy" onerror="this.style.display='none'"><span>Laravel</span></div>
+      <div class="tile rv"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/figma/figma-original.svg" alt="" loading="lazy" onerror="this.style.display='none'"><span>Figma</span></div>
+      <div class="tile rv"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/photoshop/photoshop-plain.svg" alt="" loading="lazy" onerror="this.style.display='none'"><span>Photoshop</span></div>
+      <div class="tile rv"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/canva/canva-original.svg" alt="" loading="lazy" onerror="this.style.display='none'"><span>Canva</span></div>
+      <div class="tile invert rv"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/github/github-original.svg" alt="" loading="lazy" onerror="this.style.display='none'"><span>GitHub</span></div>
     </div>
   </section>
 
-  <section id="skills">
-    <div class="wrap">
-      <h2>Skills</h2>
-      <div class="skill-grid">
-        <div class="skill-group">
-          <h3>Frontend</h3>
-          <ul>
-            <li><span>HTML &amp; CSS</span><b>95%</b><i style="--v:95%"></i></li>
-            <li><span>JavaScript</span><b>50%</b><i style="--v:50%"></i></li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h3>Backend</h3>
-          <ul>
-            <li><span>PHP</span><b>90%</b><i style="--v:90%"></i></li>
-            <li><span>MySQL/SQL Server/PostgreSQL</span><b>60%</b><i style="--v:60%"></i></li>
-            <li><span>Python</span><b>50%</b><i style="--v:50%"></i></li>
-            <li><span>Java</span><b>50%</b><i style="--v:50%"></i></li>
-            <li><span>Laravel</span><b>40%</b><i style="--v:40%"></i></li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h3>Design &amp; Tools</h3>
-          <ul>
-            <li><span>Figma</span><b>55%</b><i style="--v:55%"></i></li>
-            <li><span>Photoshop</span><b>70%</b><i style="--v:70%"></i></li>
-            <li><span>Canva</span><b>90%</b><i style="--v:90%"></i></li>
-          </ul>
-        </div>
-      <div class="skill-group wide">
-          <h3>IT Support &amp; Office Productivity</h3>
-          <ul>
-            <li><span>Microsoft Office</span><b>92%</b><i style="--v:92%"></i></li>
-            <li><span>Data entry &amp; records</span><b>95%</b><i style="--v:95%"></i></li>
-            <li><span>Administrative Support</span><b>90%</b><i style="--v:90%"></i></li>
-            <li><span>Basic Software Troubleshooting</span><b>45%</b><i style="--v:45%"></i></li>
-            <li><span>Basic Hardware Troubleshooting</span><b>40%</b><i style="--v:40%"></i></li>
-          </ul>
-        </div>
-      </div>
+  <section class="s" id="projects">
+    <h2 class="rv">Projects</h2><span class="tag rv">// selected work</span>
+    <div class="projects">
+      <article class="box proj rv"><div class="thumb"><img src="img/rhu.png" alt="Patient Records page" loading="lazy" onerror="this.remove()"><span>records.db</span></div><div class="in"><h3>Rural Health Unit I Information System</h3><p> A web-based RHU I Information System using PHP, HTML, CSS, JavaScript, and MySQL to manage patient records, consultations, prescriptions, and medical inventory.</p><ul class="chips"><li>PHP</li><li>MySQL</li><li>HTML</li><li>CSS</li></ul><a class="live" href="https://shfrndlsnts-rhu-projct.freedev.app/?i=1" target="_blank" rel="noopener">Live view</a></div></article>
+      <article class="box proj rv"><div class="thumb"><img src="img/omg.png" alt="Milk Tea Shop POS login page" loading="lazy" onerror="this.remove()"><span>milktea.pos</span></div><div class="in"><h3>OMG Milkshake Shop- Point of Sale System</h3><p>A web-based Point of Sale (POS) system for OMG Milkshake Shop, developed using Python, HTML, CSS, and PostgreSQL to manage customer orders, record sales, and streamline daily transactions.</p><ul class="chips"><li>Python</li><li>PostgreSQL</li><li>HTML</li><li>CSS</li></ul><a class="live" href="https://omgpos.onrender.com/login" target="_blank" rel="noopener">Live view</a></div></article>  
     </div>
   </section>
 
-  <section id="projects">
-    <div class="wrap">
-      <h2>Projects</h2>
-      <div class="grid">
-        <article class="card">
-          <div class="demo">
-          <div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span>Live demo</span></div>
-          <div class="shots">
-            <div class="slide t1 active" data-label="Screenshot 1 · 1280 × 800">
-              <img src="images/rhu1.png" width="1280" height="800" alt="Local shop storefront demo screenshot 1" loading="lazy" onerror="this.style.display='none'">
-            </div>
-            <div class="slide t1" data-label="Screenshot 2 · 1280 × 800">
-              <img src="images/rhu2.png" width="1280" height="800" alt="Local shop storefront demo screenshot 2" loading="lazy" onerror="this.style.display='none'">
-            </div>
-            <div class="slide t1" data-label="Screenshot 3 · 1280 × 800">
-              <img src="images/rhu3.png" width="1280" height="800" alt="Local shop storefront demo screenshot 3" loading="lazy" onerror="this.style.display='none'">
-            </div>
-            <div class="dots"><button type="button" class="dot active" aria-label="Show screenshot 1"></button><button type="button" class="dot" aria-label="Show screenshot 2"></button><button type="button" class="dot" aria-label="Show screenshot 3"></button></div>
-          </div>
-        </div>
-          <div class="card-body">
-            <h3>Rural Health Unit I Information System</h3>
-            <p>Developed a web-based RHU I Information System using PHP, HTML, CSS, JavaScript, and MySQL to manage patient records, consultations, prescriptions, and medical inventory.</p>
-            <ul class="tags"><li>PHP</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>MySQL</li></ul>
-            <a class="link" href="https://shfrndlsnts-rhu-projct.freedev.app/">View project</a>
-          </div>
-        </article>
-        <article class="card">
-          <div class="demo">
-          <div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span></span></div>
-          <div class="shots">
-            <div class="slide t2 active" data-label="Screenshot 1 · 1280 × 800">
-              <img src="images/OMG1.png" width="1280" height="800" alt="Budget tracker demo screenshot 1" loading="lazy" onerror="this.style.display='none'">
-            </div>
-            <div class="slide t2" data-label="Screenshot 2 · 1280 × 800">
-              <img src="images/OMG2.png" width="1280" height="800" alt="Budget tracker demo screenshot 2" loading="lazy" onerror="this.style.display='none'">
-            </div>
-            <div class="slide t2" data-label="Screenshot 3 · 1280 × 800">
-              <img src="images/OMG3.png" width="1280" height="800" alt="Budget tracker demo screenshot 3" loading="lazy" onerror="this.style.display='none'">
-            </div>
-            <div class="dots"><button type="button" class="dot active" aria-label="Show screenshot 1"></button><button type="button" class="dot" aria-label="Show screenshot 2"></button><button type="button" class="dot" aria-label="Show screenshot 3"></button></div>
-          </div>
-        </div>
-          <div class="card-body">
-            <h3>OMG Milkshake Shop- Point of Sale System</h3>
-            <p>A web-based Point of Sale (POS) system for OMG Milkshake Shop, developed using Python, HTML, CSS, and PostgreSQL to manage customer orders, record sales, and streamline daily transactions.</p>
-            <ul class="tags"><li>Python</li><li>HTML</li><li>CSS</li><li>PostgreSQL</li></ul>
-            <a class="link" href="https://omgpos.onrender.com/">View project</a>
-          </div>
-        </article>
-        <article class="card">
-          <div class="demo">
-          <div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span></span></div>
-          <div class="shots">
-            <div class="slide t2 active" data-label="Screenshot 1 · 1280 × 800">
-              <img src="images/UI1.png" width="1280" height="800" alt="Budget tracker demo screenshot 1" loading="lazy" onerror="this.style.display='none'">
-            </div>
-            <div class="slide t2" data-label="Screenshot 2 · 1280 × 800">
-              <img src="images/UI2.png" width="1280" height="800" alt="Budget tracker demo screenshot 2" loading="lazy" onerror="this.style.display='none'">
-            </div>
-            <div class="slide t2" data-label="Screenshot 3 · 1280 × 800">
-              <img src="images/UI3.png" width="1280" height="800" alt="Budget tracker demo screenshot 3" loading="lazy" onerror="this.style.display='none'">
-            </div>
-            <div class="dots"><button type="button" class="dot active" aria-label="Show screenshot 1"></button><button type="button" class="dot" aria-label="Show screenshot 2"></button><button type="button" class="dot" aria-label="Show screenshot 3"></button></div>
-          </div>
-        </div>
-          <div class="card-body">
-            <h3>UI/UX Design</h3>
-            <p>Created UI/UX designs with simple layouts and user-friendly experiences.</p>
-            <ul class="tags"><li>Photoshop</li><li>Figma</li></ul>
-            
-          </div>
-        </article>
-      </div>
+  <section class="s" id="education">
+    <h2 class="rv">Education</h2><span class="tag rv">// academic background</span>
+    <div class="tl">
+      <div class="item rv"><h3>Bachelor of Science in Information Technology (BSIT)</h3><span class="when">2021 – 2025</span><p>Nueva Ecija University of Science and Technology</p></div>
+      <div class="item rv"><h3>Accountancy, Business, and Management</h3><span class="when">2019 – 2021</span><p>Santo Domingo National Trade School</p></div>
     </div>
   </section>
 
-  <section id="education">
-    <div class="wrap">
-      <div class="col-edu">
-        <h2>Education</h2>
-        <ol class="timeline">
-        <li>
-          <time>2021 - 2025</time>
-          <h3>Nueva Ecija University of Science and Technology</h3>
-          <p>Bachelor of Science in Information Technology </p>
-        </li>
-        <li>
-          <time>2015 – 2021</time> 
-          <h3>Santo Domingo National Trade School </h3>
-          <p>Accountancy, Business and Management </p>
-        </li>
-        <li>
-          <time>2009 – 2015</time>
-          <h3>Talavera Central School</h3>
-          <p>Elementary</p>
-        </li>
-      </ol>
-      </div>
+  <section class="s" id="experience">
+    <h2 class="rv">Work Experience</h2><span class="tag rv">// where I've worked</span>
+    <div class="tl">
+      <div class="item rv"><h3>Secretary</h3><span class="when">4R Macapagal Advertising | November 2025 - May 2026</span><p>Supported daily office operations, managed documents and administrative tasks, and assisted with design layouts and advertising materials.</p></div>
+      <div class="item rv"><h3>Intern</h3><span class="when">Municipal Agriculture Office | February – May 2025</span><p>Assisted with administrative tasks, provided basic hardware and software support, and helped troubleshoot common computer issues to support daily office operations.</p></div>
     </div>
   </section>
 
-  <section id="experience">
-    <div class="wrap">
-      <div class="col-exp">
-        <h2>Experience</h2>
-        <ol class="timeline">
-          <li>
-            <time>November 2025 - May 2026</time>
-            <h3>4R Macapagal Advertising</h3>
-            <p>Secretary</p>
-          </li>
-          <li>
-            <time>February – May 2025</time>
-            <h3>Municipal Agriculture Office </h3>
-            <p>Intern</p>
-          </li>
-        </ol>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <div class="wrap">
-      <div>
-        <h2>Contact me</h2>
-        <p>Have a project in mind or want to say hello? Send a message.</p>
-        <ul class="links">
-          <li>Email: <a href="mailto:shaidelosantos77@gmail.com">shaidelosantos77@gmail.com</a></li>
-          <li>GitHub: <a href="https://github.com/shaidelosantos">github.com/shaidelosantos</a></li>
-          <li>LinkedIn: <a href="https://www.linkedin.com/in/shai-delos-santos-32985a415">linkedin.com/in/shai-delos-santos-32985a415 </a></li>
-        </ul>
-      </div>
-      <form id="contactForm">
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" required autocomplete="name">
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required autocomplete="email">
-        <label for="msg">Message</label>
-        <textarea id="msg" name="msg" required></textarea>
-        <button class="btn primary" type="submit">Send message</button>
-        <p class="note" id="note" role="status"></p>
-      </form>
-    </div>
+  <section class="s contact" id="contact">
+    <h2 class="rv">Contact</h2><span class="tag rv">// let's talk</span>
+    <p class="rv">Have a project or an opportunity in mind? Send a message and I'll reply soon.</p>
+    <div class="rv"><a class="btn" href="mailto:shaidelosantos77@gmail.com">Email me</a><a class="btn o" href="https://github.com/shaidelosantos">GitHub</a></div>
   </section>
 </main>
+<footer>&copy; 2026 Shai Delos Santos</footer>
 
-<footer>© <span id="yr">2026</span> Shai Delos Santos. All rights reserved.</footer>
-
-<script src="script.js"></script>
+<script>
+// scramble-decode the name
+const chars='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#$%&<>/';
+document.querySelectorAll('#name span').forEach((el,i)=>{
+  const final=el.dataset.t;let f=0;const total=34+i*14;
+  const t=setInterval(()=>{
+    f++;const p=f/total;
+    el.textContent=[...final].map((c,k)=>c===' '?' ':(k/final.length<p?c:chars[Math.random()*chars.length|0])).join('');
+    if(f>=total){el.textContent=final;clearInterval(t)}
+  },40);
+});
+// periodic glitch
+const nm=document.getElementById('name');
+setInterval(()=>{nm.classList.add('glitch');setTimeout(()=>nm.classList.remove('glitch'),260)},4200);
+// typed role
+const roles=['Web Developer','Tech Enthusiast','Problem Solver','Creative Thinker'];
+let ri=0,ci=0,del=false;const ty=document.getElementById('typed');
+(function tick(){
+  const w=roles[ri];ty.textContent='> '+w.slice(0,ci);
+  if(!del&&ci<w.length){ci++;setTimeout(tick,80)}
+  else if(!del){del=true;setTimeout(tick,1400)}
+  else if(ci>0){ci--;setTimeout(tick,40)}
+  else{del=false;ri=(ri+1)%roles.length;setTimeout(tick,300)}
+})();
+// parallax on pointer
+const hero=document.querySelector('.hero'),photo=document.getElementById('photo');
+hero.addEventListener('pointermove',e=>{
+  const x=(e.clientX/innerWidth-.5),y=(e.clientY/innerHeight-.5);
+  nm.style.transform=`translate(${x*-34}px,calc(-54% + ${y*-20}px))`;
+  photo.style.transform=`translate(${x*12}px,${y*6}px)`;
+});
+// nav
+const burger=document.querySelector('.burger'),menu=document.getElementById('menu');
+burger.onclick=()=>{const o=menu.classList.toggle('open');burger.setAttribute('aria-expanded',o)};
+menu.querySelectorAll('a').forEach(a=>a.onclick=()=>menu.classList.remove('open'));
+const links=[...menu.querySelectorAll('a')];
+const io=new IntersectionObserver(es=>es.forEach(e=>{
+  if(e.isIntersecting)links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id));
+}),{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('section.s').forEach(s=>io.observe(s));
+const rio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');rio.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>rio.observe(el));
+// particle network
+const cv=document.getElementById('net'),cx=cv.getContext('2d');let W,H,pts=[];
+function size(){W=cv.width=innerWidth;H=cv.height=innerHeight;pts=Array.from({length:Math.min(70,W/18|0)},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35}))}
+size();addEventListener('resize',size);
+if(!matchMedia('(prefers-reduced-motion:reduce)').matches)(function draw(){
+  cx.clearRect(0,0,W,H);
+  pts.forEach((p,i)=>{
+    p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1;
+    cx.fillStyle='rgba(255,59,95,.7)';cx.fillRect(p.x,p.y,2,2);
+    for(let j=i+1;j<pts.length;j++){const q=pts[j],d=Math.hypot(p.x-q.x,p.y-q.y);
+      if(d<140){cx.strokeStyle=`rgba(184,29,61,${.35*(1-d/140)})`;cx.beginPath();cx.moveTo(p.x,p.y);cx.lineTo(q.x,q.y);cx.stroke()}}
+  });
+  requestAnimationFrame(draw);
+})();
+</script>
 </body>
 </html>
